@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Zmija</title>
+    <link rel="stylesheet" href="css/zmija.css" type="text/css">
+    <audio controls autoplay preload="auto" style=" width:100px;">
+        <source src="pjesma/ideZmija.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+
+    </audio>
+
+</head>
+<body>
+
+<div class="container">
+    <div id="overlay">
+        Tvoj Rezultat : <span id="final_score"></span>
+        <br>
+        <a onclick="window.location.reload()" href="#">Igraj Ponovno</a>
+    </div>
+    <canvas id="canvas" width="600" height="450"></canvas>
+    <div id="stats">
+
+        <div id="score"></div>
+        <div id="high_score"></div>
+        <div id="expert_level"></div>
+        <button onclick="resetScore()" id="reset_score">Reset</button>
+    </div>
+</div>
+
+<p>Zmija By <a href="https://github.com/mbuzinac" target="_blank">Matija Buzinac</a></p>
+
+
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="js/zmija.js"></script>
+
+</body>
+</html>
